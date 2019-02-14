@@ -33,6 +33,14 @@ Homework.create(
     image: "http://www.pumahue.cl/curauma/wp-content/uploads/sites/6/2017/09/IMG_6364portada-300x300.jpg"
 )
 Homework.create(
-    name: 'Asado con amigos y/o familia',
-    image: "http://www.pumahue.cl/curauma/wp-content/uploads/sites/6/2017/09/IMG_6364portada-300x300.jpg"
+    name: 'Ir a las ramadas',
+    image: "http://s3.amazonaws.com/lahora-cl-bkt/wp-content/uploads/2018/08/22003851/fondas-m.jpg"
+)
+Homework.create(
+    name: 'Jugar al trompo',
+    image: "https://cdn.shopify.com/s/files/1/1044/8640/products/juguetes-trompo-de-madera-1_1024x1024.jpg"
+)
+Homework.create(
+    name: 'Hacer un asado con la familia y/o amigos',
+    image: "https://felipecamposclarke.files.wordpress.com/2011/09/18073parrilla-scaled1000.jpg"
 )

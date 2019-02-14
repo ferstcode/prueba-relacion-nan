@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
   devise_for :users
-  get 'homeworks', to: 'homeworks#index'
-  get 'homeworks/:id', to: 'homeworks#show', as: 'homework'
-
+  resources :homeworks, only: %i[index show] do
+  resources :homework_users, only: %i[create destroy]
+  end
+  
 
   root 'homeworks#index'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html

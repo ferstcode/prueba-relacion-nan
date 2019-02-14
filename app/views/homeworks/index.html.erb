@@ -3,12 +3,13 @@
 <% @homeworks.each do |h| %>
 
     <div class="card col-sm-3" style="width: 18rem;">        
-            <%= image_tag h.image%>
+            <%= image_tag h.image, size: '200x200'%>
             <div class="card-body">
-            <h5 class="card-title"><%=h.name %></h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-            
+                <h5 class="card-title"><%=h.name %></h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <%=link_to 'Detalle', homework_path(h), class:"btn btn-primary" %>                        
+                <%= link_to 'Completado!!', homework_homework_users_path(h), method: :post, class:"btn btn-primary" %>
+                <%= link_to 'No completado', homework_homework_user_path(h, :id), method: :delete, class:"btn btn-primary" %>
             </div>
         </div>
         <% end %>

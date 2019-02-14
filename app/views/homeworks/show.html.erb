@@ -1,4 +1,25 @@
 
-<%= @homework.name %>
+<table class='table'>
+    <thead>
+        <tr>
+            <th><%= @homework.name %> </th>
+        </tr>
+        <tr>
+            <th>Email de usuarios con la tarea completada</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% @userscompleted.each do |u| %>
+        <tr>
+            <td><%= u.user.email %></td>
+        </tr>
+        <% end %>
+    </tbody>
+</table>
 
-<%= link_to 'Back', root_path %>
+
+
+
+
+
+<%= link_to 'Back', root_path, class:"btn btn-primary" %>
